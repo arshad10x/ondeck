@@ -124,28 +124,28 @@ footer{
     }
 }
 
-// @media screen and (max-width: 792px){
+@media screen and (max-width: 792px){
 
-//     .nav-item,.link{
-//        display: none;
-//     }
+    .nav-item,.link{
+       display: none;
+    }
 
-//     #menu{
-//        display: block!important;
-//        padding: 10px;
+    #menu{
+       display: block!important;
+       padding: 10px;
        
-//     }
+    }
 
-//     .wrapper{
-//         max-width: 90vw;
-//     }
-// }
+    .wrapper{
+        max-width: 90vw;
+    }
+}
 
 
-// @media screen and (max-width: 750px){
+@media screen and (max-width: 750px){
 
-//     .hero-img{
-//         display: none;
-//     }
-// }
+    .hero-img{
+        display: none;
+    }
+}
 
