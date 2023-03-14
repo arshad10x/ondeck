@@ -1,4 +1,5 @@
 
+// define
 
 $primary:#f3eae3;
 $title:#000101;
@@ -97,8 +98,6 @@ body{
             width:42vw;
         }
 
-        
-
         .logo-section{
             margin-top: 20px;
             
@@ -123,6 +122,9 @@ footer{
         justify-content: space-around;
     }
 }
+
+
+//media query
 
 @media screen and (max-width: 792px){
 
