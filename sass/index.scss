@@ -1,0 +1,151 @@
+
+
+$primary:#f3eae3;
+$title:#000101;
+$mini-title:#f7b300;
+$button:#153516;
+$text:#6c6c6d;
+$fontSize:12px;
+$weight:700;
+
+$font:'Archivo', sans-serif;
+
+@mixin btn {
+    background-color:$button;
+    color:#FFF;
+    padding: 10px 25px;
+    font-size: $fontSize;
+    border-radius: 5px;
+    font-weight: $weight;
+    cursor: pointer;
+}
+
+body,ul,li,a{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+    color:$text;
+
+
+}
+body{
+    background-color:$primary;
+    width: 100vw;
+    height: 90vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 96vw;
+
+    #menu{
+   display: none;
+       
+    }
+
+    .nav-element{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li{
+            margin: 20px;
+        }
+
+    }
+
+    .link{
+        margin: 10px;
+        color:$text;
+
+        .btn{
+            @include btn;
+            margin-left: 10px;
+        }
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 60px;
+
+    .wrapper{
+        padding: 10px 30px;
+        width: 50vw;
+
+
+        .btn{
+            @include btn;
+        }
+
+        h1{
+            font-size: 60px;
+            color:$title;
+
+            .min-heading{
+                color:$mini-title;
+            }
+        }
+
+        p{
+            margin-top: -35px;
+            width:42vw;
+        }
+
+        
+
+        .logo-section{
+            margin-top: 20px;
+            
+            .icon{
+                padding: 0px 5px;
+                width: 20px;
+            }
+        }
+    }
+}
+
+footer{
+   margin-top:100px;
+
+    p{
+        text-align: center;
+    }
+    
+    .banner{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 792px){
+
+    .nav-item,.link{
+       display: none;
+    }
+
+    #menu{
+       display: block!important;
+       padding: 10px;
+       
+    }
+
+    .wrapper{
+        max-width: 90vw;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+
+    .hero-img{
+        display: none;
+    }
+}
+
